@@ -1,5 +1,7 @@
 # Natal Chart Lab MCP server
 
+[![xucheng2024/natalchartlab-mcp MCP server](https://glama.ai/mcp/servers/xucheng2024/natalchartlab-mcp/badges/score.svg)](https://glama.ai/mcp/servers/xucheng2024/natalchartlab-mcp)
+
 An [MCP](https://modelcontextprotocol.io) server that gives AI assistants accurate astrology and sky data: where the Sun, Moon and planets are on the tropical zodiac, the signs in a birth chart, retrograde periods with shadow dates, and Moon phases.
 
 It is a thin client for the free, keyless [Natal Chart Lab astrology API](https://natalchartlab.com/astrology-api). Positions come from Astronomy Engine and are [checked against NASA JPL Horizons](https://natalchartlab.com/methodology) (largest difference at 50 test points is 19.5 arcseconds, well under a hundredth of a degree). No API key, no sign-up, no personal data stored.
