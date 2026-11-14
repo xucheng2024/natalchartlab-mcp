@@ -1,0 +1,62 @@
+{
+  "name": "natalchartlab-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.xucheng2024/natalchartlab",
+  "description": "MCP server for astrology and sky data: current planet positions and zodiac signs, birth chart placements, Mercury and other retrogrades, Moon phases and void-of-course Moon. Free, no API key.",
+  "type": "module",
+  "bin": {
+    "natalchartlab-mcp": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test \"test/*.test.ts\"",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "astrology",
+    "zodiac",
+    "horoscope",
+    "natal-chart",
+    "birth-chart",
+    "ephemeris",
+    "moon-phase",
+    "mercury-retrograde",
+    "astronomy"
+  ],
+  "author": "Natal Chart Lab (https://natalchartlab.com)",
+  "homepage": "https://natalchartlab.com/astrology-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xucheng2024/natalchartlab-mcp.git"
+  },
+  "bugs": "https://github.com/xucheng2024/natalchartlab-mcp/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  }
+}

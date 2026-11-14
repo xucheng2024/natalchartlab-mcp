@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.xucheng2024/natalchartlab",
+  "title": "Natal Chart Lab",
+  "description": "Astrology sky data: planet signs, birth placements, retrogrades, Moon phases. No API key.",
+  "websiteUrl": "https://natalchartlab.com/astrology-api",
+  "repository": {
+    "url": "https://github.com/xucheng2024/natalchartlab-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "natalchartlab-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
