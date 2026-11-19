@@ -8,7 +8,7 @@ export const VERSION = '1.0.0';
 
 export function createServer() {
   const server = new McpServer({ name: 'natalchartlab', version: VERSION, title: 'Natal Chart Lab' });
-  const ro = { readOnlyHint: true, openWorldHint: true } as const;
+  const ro = { readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: true } as const;
   const wrap = <A>(fn: (a: A) => Promise<unknown>) => async (a: A) => {
     try { return { content: [{ type: 'text' as const, text: JSON.stringify(await fn(a), null, 2) }] }; }
     catch (e) { return { isError: true, content: [{ type: 'text' as const, text: (e as Error).message }] }; }
